@@ -1,29 +1,24 @@
 singer-python
-===================
+=============
 
 Writes the Singer format from Python
+
+This is a clone of the official [singer-python](https://github.com/singer-io/singer-python) library with loose version requirement.
 
 Use
 ---
 
-This library depends on python3. We recommend using a `virtualenv`
-like this:
+Download and install the library like this:
 
 ```bash
-python3 -m venv ~/.virtualenvs/singer-python
-```
-
-Next, install this library:
-
-```bash
-source ~/.virtualenvs/singer-python/bin/activate
 git clone http://github.com/singer-io/singer-python
 cd singer-python
 make install
+source .venv/bin/activate
 ```
 
-Now, from python code within the same `virtualenv`, you can use the
-library:
+Now, from python code within the virtuel env (which was created via
+`make install`), you can use the library:
 
 ```python
 import singer
